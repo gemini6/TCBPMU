@@ -90,6 +90,13 @@
   <ItemGroup>
     <EmbeddedResource Include="src\gui\gui.resx" />
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="src\res\img\tcb_logos\tcb1.jpg" />
+    <Image Include="src\res\img\tcb_logos\tcb2.png" />
+    <Image Include="src\res\img\tcb_logos\tcb3.png" />
+    <Image Include="src\res\img\tcb_logos\tcb4.jpg" />
+    <Image Include="src\res\img\tcb_logos\tcb5.png" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
