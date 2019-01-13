@@ -97,6 +97,9 @@
     <Image Include="src\res\img\tcb_logos\tcb4.jpg" />
     <Image Include="src\res\img\tcb_logos\tcb5.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="src\docs\functions.txt" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

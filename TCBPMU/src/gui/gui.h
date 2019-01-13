@@ -34,8 +34,8 @@ namespace TCBPMU {
 				delete components;
 			}
 		}
-    private: System::Windows::Forms::StatusStrip^  statusStrip1;
-    private: System::Windows::Forms::MenuStrip^  menuStrip1;
+
+
 
     protected:
 
@@ -52,36 +52,14 @@ namespace TCBPMU {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-            this->statusStrip1 = (gcnew System::Windows::Forms::StatusStrip());
-            this->menuStrip1 = (gcnew System::Windows::Forms::MenuStrip());
             this->SuspendLayout();
-            // 
-            // statusStrip1
-            // 
-            this->statusStrip1->GripStyle = System::Windows::Forms::ToolStripGripStyle::Visible;
-            this->statusStrip1->Location = System::Drawing::Point(10,327);
-            this->statusStrip1->Name = L"statusStrip1";
-            this->statusStrip1->Size = System::Drawing::Size(391,22);
-            this->statusStrip1->TabIndex = 0;
-            this->statusStrip1->Text = L"statusStrip1";
-            // 
-            // menuStrip1
-            // 
-            this->menuStrip1->Location = System::Drawing::Point(10,10);
-            this->menuStrip1->Name = L"menuStrip1";
-            this->menuStrip1->Size = System::Drawing::Size(391,24);
-            this->menuStrip1->TabIndex = 1;
-            this->menuStrip1->Text = L"menuStrip1";
             // 
             // gui
             // 
             this->AutoScaleDimensions = System::Drawing::SizeF(6,13);
             this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
             this->ClientSize = System::Drawing::Size(411,359);
-            this->Controls->Add(this->statusStrip1);
-            this->Controls->Add(this->menuStrip1);
             this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::Fixed3D;
-            this->MainMenuStrip = this->menuStrip1;
             this->MaximizeBox = false;
             this->Name = L"gui";
             this->Padding = System::Windows::Forms::Padding(10);
@@ -90,7 +68,6 @@ namespace TCBPMU {
             this->Text = L"TCBPMU";
             this->Load += gcnew System::EventHandler(this,&gui::gui_Load);
             this->ResumeLayout(false);
-            this->PerformLayout();
 
         }
 #pragma endregion
